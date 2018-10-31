@@ -7,13 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DACB796F2188B06300B753C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB796E2188B06300B753C7 /* AppDelegate.swift */; };
-		DACB79712188B06300B753C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB79702188B06300B753C7 /* ViewController.swift */; };
 		DACB79742188B06300B753C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACB79722188B06300B753C7 /* Main.storyboard */; };
 		DACB79762188B06D00B753C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DACB79752188B06D00B753C7 /* Assets.xcassets */; };
 		DACB79792188B06D00B753C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACB79772188B06D00B753C7 /* LaunchScreen.storyboard */; };
 		DACB79842188B06D00B753C7 /* TransferNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB79832188B06D00B753C7 /* TransferNowTests.swift */; };
 		DACB798F2188B06D00B753C7 /* TransferNowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB798E2188B06D00B753C7 /* TransferNowUITests.swift */; };
+		DACB79A72188B30900B753C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB79A32188B30900B753C7 /* AppDelegate.swift */; };
+		DACB79A82188B30900B753C7 /* TransferMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB79A62188B30900B753C7 /* TransferMoneyViewController.swift */; };
+		DACB79AE2188B36000B753C7 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB79AD2188B36000B753C7 /* APIManager.swift */; };
+		DACB79B02188B38E00B753C7 /* ParamsEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB79AF2188B38E00B753C7 /* ParamsEncoding.swift */; };
+		DACB79B22188B3AF00B753C7 /* URLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB79B12188B3AF00B753C7 /* URLEncoder.swift */; };
+		DACB79B42188B3C800B753C7 /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB79B32188B3C800B753C7 /* JSONEncoder.swift */; };
+		DACB79B62188B53500B753C7 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB79B52188B53500B753C7 /* APIRouter.swift */; };
+		DACB79B82188B54E00B753C7 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB79B72188B54E00B753C7 /* HTTPTask.swift */; };
+		DACB79BA2188B56100B753C7 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB79B92188B56100B753C7 /* HTTPMethod.swift */; };
+		DACB79BC2188B57400B753C7 /* APIEndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB79BB2188B57400B753C7 /* APIEndPointType.swift */; };
+		DACB79BE2188B5DB00B753C7 /* ServiceAPIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB79BD2188B5DB00B753C7 /* ServiceAPIEndPoint.swift */; };
+		DACB79C521895A7200B753C7 /* transfersuccess_response.json in Resources */ = {isa = PBXBuildFile; fileRef = DACB79C421895A7200B753C7 /* transfersuccess_response.json */; };
+		DACB79C821896AE700B753C7 /* TransferMoneyDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB79C721896AE700B753C7 /* TransferMoneyDataModel.swift */; };
+		DACB79CA2189705500B753C7 /* UIAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB79C92189705500B753C7 /* UIAlertViewController.swift */; };
+		DACB79CC21898A7100B753C7 /* TransferSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB79CB21898A7100B753C7 /* TransferSuccessViewController.swift */; };
+		DACB79CE21899F9800B753C7 /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = DACB79CD21899F9700B753C7 /* ReadMe.md */; };
+		DACB79D02189A06200B753C7 /* changelog.md in Resources */ = {isa = PBXBuildFile; fileRef = DACB79CF2189A06200B753C7 /* changelog.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +50,6 @@
 
 /* Begin PBXFileReference section */
 		DACB796B2188B06300B753C7 /* TransferNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransferNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DACB796E2188B06300B753C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DACB79702188B06300B753C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DACB79732188B06300B753C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DACB79752188B06D00B753C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DACB79782188B06D00B753C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +60,23 @@
 		DACB798A2188B06D00B753C7 /* TransferNowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransferNowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACB798E2188B06D00B753C7 /* TransferNowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferNowUITests.swift; sourceTree = "<group>"; };
 		DACB79902188B06D00B753C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DACB79A32188B30900B753C7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DACB79A62188B30900B753C7 /* TransferMoneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferMoneyViewController.swift; sourceTree = "<group>"; };
+		DACB79AD2188B36000B753C7 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		DACB79AF2188B38E00B753C7 /* ParamsEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamsEncoding.swift; sourceTree = "<group>"; };
+		DACB79B12188B3AF00B753C7 /* URLEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncoder.swift; sourceTree = "<group>"; };
+		DACB79B32188B3C800B753C7 /* JSONEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncoder.swift; sourceTree = "<group>"; };
+		DACB79B52188B53500B753C7 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		DACB79B72188B54E00B753C7 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		DACB79B92188B56100B753C7 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		DACB79BB2188B57400B753C7 /* APIEndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPointType.swift; sourceTree = "<group>"; };
+		DACB79BD2188B5DB00B753C7 /* ServiceAPIEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPIEndPoint.swift; sourceTree = "<group>"; };
+		DACB79C421895A7200B753C7 /* transfersuccess_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = transfersuccess_response.json; sourceTree = "<group>"; };
+		DACB79C721896AE700B753C7 /* TransferMoneyDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferMoneyDataModel.swift; sourceTree = "<group>"; };
+		DACB79C92189705500B753C7 /* UIAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertViewController.swift; sourceTree = "<group>"; };
+		DACB79CB21898A7100B753C7 /* TransferSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferSuccessViewController.swift; sourceTree = "<group>"; };
+		DACB79CD21899F9700B753C7 /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = ReadMe.md; path = TransferNow/ReadMe.md; sourceTree = "<group>"; };
+		DACB79CF2189A06200B753C7 /* changelog.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = changelog.md; path = TransferNow/changelog.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +107,8 @@
 		DACB79622188B06300B753C7 = {
 			isa = PBXGroup;
 			children = (
+				DACB79CF2189A06200B753C7 /* changelog.md */,
+				DACB79CD21899F9700B753C7 /* ReadMe.md */,
 				DACB796D2188B06300B753C7 /* TransferNow */,
 				DACB79822188B06D00B753C7 /* TransferNowTests */,
 				DACB798D2188B06D00B753C7 /* TransferNowUITests */,
@@ -97,8 +129,12 @@
 		DACB796D2188B06300B753C7 /* TransferNow */ = {
 			isa = PBXGroup;
 			children = (
-				DACB796E2188B06300B753C7 /* AppDelegate.swift */,
-				DACB79702188B06300B753C7 /* ViewController.swift */,
+				DACB79A22188B30900B753C7 /* AppDelegate */,
+				DACB79A42188B30900B753C7 /* Networking */,
+				DACB79A52188B30900B753C7 /* Controller */,
+				DACB79C621896AD900B753C7 /* DataModel */,
+				DACB79BF21893FE400B753C7 /* Common */,
+				DACB79C321895A7200B753C7 /* Resources */,
 				DACB79722188B06300B753C7 /* Main.storyboard */,
 				DACB79752188B06D00B753C7 /* Assets.xcassets */,
 				DACB79772188B06D00B753C7 /* LaunchScreen.storyboard */,
@@ -123,6 +159,103 @@
 				DACB79902188B06D00B753C7 /* Info.plist */,
 			);
 			path = TransferNowUITests;
+			sourceTree = "<group>";
+		};
+		DACB79A22188B30900B753C7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DACB79A32188B30900B753C7 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DACB79A42188B30900B753C7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DACB79AC2188B34B00B753C7 /* Manager */,
+				DACB79AB2188B34B00B753C7 /* Encoder */,
+				DACB79A92188B34B00B753C7 /* APIEndPoint */,
+				DACB79AA2188B34B00B753C7 /* Service */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DACB79A52188B30900B753C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DACB79A62188B30900B753C7 /* TransferMoneyViewController.swift */,
+				DACB79CB21898A7100B753C7 /* TransferSuccessViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DACB79A92188B34B00B753C7 /* APIEndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				DACB79BD2188B5DB00B753C7 /* ServiceAPIEndPoint.swift */,
+			);
+			path = APIEndPoint;
+			sourceTree = "<group>";
+		};
+		DACB79AA2188B34B00B753C7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DACB79BB2188B57400B753C7 /* APIEndPointType.swift */,
+				DACB79B72188B54E00B753C7 /* HTTPTask.swift */,
+				DACB79B92188B56100B753C7 /* HTTPMethod.swift */,
+				DACB79B52188B53500B753C7 /* APIRouter.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DACB79AB2188B34B00B753C7 /* Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				DACB79AF2188B38E00B753C7 /* ParamsEncoding.swift */,
+				DACB79B12188B3AF00B753C7 /* URLEncoder.swift */,
+				DACB79B32188B3C800B753C7 /* JSONEncoder.swift */,
+			);
+			path = Encoder;
+			sourceTree = "<group>";
+		};
+		DACB79AC2188B34B00B753C7 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				DACB79AD2188B36000B753C7 /* APIManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		DACB79BF21893FE400B753C7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DACB79C021893FE400B753C7 /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DACB79C021893FE400B753C7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DACB79C92189705500B753C7 /* UIAlertViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DACB79C321895A7200B753C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DACB79C421895A7200B753C7 /* transfersuccess_response.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DACB79C621896AD900B753C7 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				DACB79C721896AE700B753C7 /* TransferMoneyDataModel.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +363,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DACB79792188B06D00B753C7 /* LaunchScreen.storyboard in Resources */,
+				DACB79C521895A7200B753C7 /* transfersuccess_response.json in Resources */,
 				DACB79762188B06D00B753C7 /* Assets.xcassets in Resources */,
+				DACB79D02189A06200B753C7 /* changelog.md in Resources */,
 				DACB79742188B06300B753C7 /* Main.storyboard in Resources */,
+				DACB79CE21899F9800B753C7 /* ReadMe.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +392,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DACB79712188B06300B753C7 /* ViewController.swift in Sources */,
-				DACB796F2188B06300B753C7 /* AppDelegate.swift in Sources */,
+				DACB79BE2188B5DB00B753C7 /* ServiceAPIEndPoint.swift in Sources */,
+				DACB79B62188B53500B753C7 /* APIRouter.swift in Sources */,
+				DACB79BC2188B57400B753C7 /* APIEndPointType.swift in Sources */,
+				DACB79CA2189705500B753C7 /* UIAlertViewController.swift in Sources */,
+				DACB79B22188B3AF00B753C7 /* URLEncoder.swift in Sources */,
+				DACB79AE2188B36000B753C7 /* APIManager.swift in Sources */,
+				DACB79CC21898A7100B753C7 /* TransferSuccessViewController.swift in Sources */,
+				DACB79A82188B30900B753C7 /* TransferMoneyViewController.swift in Sources */,
+				DACB79B82188B54E00B753C7 /* HTTPTask.swift in Sources */,
+				DACB79BA2188B56100B753C7 /* HTTPMethod.swift in Sources */,
+				DACB79B02188B38E00B753C7 /* ParamsEncoding.swift in Sources */,
+				DACB79B42188B3C800B753C7 /* JSONEncoder.swift in Sources */,
+				DACB79C821896AE700B753C7 /* TransferMoneyDataModel.swift in Sources */,
+				DACB79A72188B30900B753C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -377,6 +526,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -433,12 +583,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3789525YM5;
 				INFOPLIST_FILE = TransferNow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kanishk.com.TransferNow;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kanishk.TransferNow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,12 +601,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3789525YM5;
 				INFOPLIST_FILE = TransferNow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kanishk.com.TransferNow;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kanishk.TransferNow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
