@@ -36,21 +36,20 @@ struct APIManager {
     ///   - FromAccountNumber: from account number
     ///   - toAccountNumber: to account number
     ///   - completion: completion block for results.
-    func initMoneyTransfer(amount: Int, fromAccountNumber: Int, toAccountNumber: Int, completion: @escaping (AnyObject?,_ error: String?)->()){
+    func initMoneyTransfer(amount: Int, fromAccountNumber: Int, toAccountNumber: Int, completion: @escaping ([TransferMoneyDataModel]?,_ error: String?)->()){
         
         if (APIManager.environment == .development) {
             //Offline Mode
             if let path = Bundle.main.path(forResource: "transfersuccess_response", ofType: "json") {
-                do {
+                do{
                     let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                    let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
-                    if let jsonResult = jsonResult as? Dictionary<String, AnyObject>, let _ = jsonResult["results"] as? [Any] {
-                        completion(data as AnyObject, nil)
-                        return
-                    }
+                    let decoder = JSONDecoder()
+                    let response = try decoder.decode([TransferMoneyDataModel].self, from: data)
+                    completion(response, nil)
                 } catch {
                     completion(nil, error as? String)
                 }
+                return
             }
         }
 
@@ -70,12 +69,9 @@ struct APIManager {
                         return
                     }
                     do {
-                        let jsonData = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers)
-                        print(jsonData)
-                        let apiResponse = try JSONDecoder().decode(TransferMoneyDataModel.self, from: responseData)
-                        completion(apiResponse as AnyObject, nil)
+                        let apiResponse = try JSONDecoder().decode([TransferMoneyDataModel].self, from: responseData)
+                        completion(apiResponse, nil)
                     }catch {
-                        print(error)
                         completion(nil, APIResponse.unableToDecode.rawValue)
                     }
                 case .failure(let apiFailureError):

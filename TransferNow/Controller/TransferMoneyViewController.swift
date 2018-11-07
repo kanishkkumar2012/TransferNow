@@ -14,6 +14,8 @@ class TransferMoneyViewController: UIViewController {
     var apiManager: APIManager!
     let errorTitle = NSLocalizedString("Error", comment: "Error")
     let okBtnTitle = NSLocalizedString("OK", comment: "OK")
+    var isSuccessResponse: Bool = false
+
     @IBOutlet weak var fromAccountNumberTextField: UITextField!
     @IBOutlet weak var toAccountNumberTextField: UITextField!
     @IBOutlet weak var amountTextField: UITextField!
@@ -28,16 +30,13 @@ class TransferMoneyViewController: UIViewController {
     // MARK: - Instance Methods
     func setupInitials() {
         self.apiManager = APIManager()
-        
-        self.amountTextField.text = "1000"
-        self.fromAccountNumberTextField.text = "12345678"
-        self.toAccountNumberTextField.text = "98765432"
     }
 
     // MARK: - Actions Methods
     @IBAction func onClickSend(_ sender: Any) {
 
         guard let amount = self.amountTextField.text?.numberValue, let fromAccountNumber = self.fromAccountNumberTextField.text?.numberValue, let toAccountNumber = self.toAccountNumberTextField.text?.numberValue else {
+            self.isSuccessResponse = false
             return
         }
 
@@ -50,7 +49,23 @@ class TransferMoneyViewController: UIViewController {
                 }
                 return
             }
+            self.isSuccessResponse = true
         }
+    }
+
+    override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool {
+        if let ident = identifier {
+            if ident == "TransferSuccessViewController" {
+                if isSuccessResponse != true {
+                    //API Response Failed, Show Error Message to User.
+                    DispatchQueue.main.async {
+                        self.presentAlertWithTitle(title: self.errorTitle, message: "Please enter a valid inputs", options: self.okBtnTitle, completion: {_ in })
+                    }
+                    return false
+                }
+            }
+        }
+        return true
     }
 }
 

@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02D8325980750818265A8C18 /* Pods_TransferNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B570FF55D736AD4362630CB /* Pods_TransferNow.framework */; };
+		4E80CA5AA59DEB0C5046101F /* Pods_TransferNowUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC37202E6F89D022FDD00DB /* Pods_TransferNowUITests.framework */; };
+		9EAE9D54E708CB34F7F6C4E0 /* Pods_TransferNowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F842B30F745DEDA8F86AEB /* Pods_TransferNowTests.framework */; };
+		DA42F86F2191D22300841F48 /* TransferMoneyDataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA42F86E2191D22300841F48 /* TransferMoneyDataModelTests.swift */; };
 		DACB79742188B06300B753C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACB79722188B06300B753C7 /* Main.storyboard */; };
 		DACB79762188B06D00B753C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DACB79752188B06D00B753C7 /* Assets.xcassets */; };
 		DACB79792188B06D00B753C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACB79772188B06D00B753C7 /* LaunchScreen.storyboard */; };
-		DACB79842188B06D00B753C7 /* TransferNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB79832188B06D00B753C7 /* TransferNowTests.swift */; };
+		DACB79842188B06D00B753C7 /* ServiceAPIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB79832188B06D00B753C7 /* ServiceAPIEndPoint.swift */; };
 		DACB798F2188B06D00B753C7 /* TransferNowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB798E2188B06D00B753C7 /* TransferNowUITests.swift */; };
 		DACB79A72188B30900B753C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB79A32188B30900B753C7 /* AppDelegate.swift */; };
 		DACB79A82188B30900B753C7 /* TransferMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB79A62188B30900B753C7 /* TransferMoneyViewController.swift */; };
@@ -49,13 +53,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00A315EF6A51DDC0C379842A /* Pods-TransferNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransferNow.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransferNow/Pods-TransferNow.release.xcconfig"; sourceTree = "<group>"; };
+		1B570FF55D736AD4362630CB /* Pods_TransferNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransferNow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30D2E4D52C520B302F17417D /* Pods-TransferNowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransferNowTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransferNowTests/Pods-TransferNowTests.release.xcconfig"; sourceTree = "<group>"; };
+		58F842B30F745DEDA8F86AEB /* Pods_TransferNowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransferNowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DC09DAC109FDED428543EF3 /* Pods-TransferNowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransferNowTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransferNowTests/Pods-TransferNowTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB0F6F55966703C205118394 /* Pods-TransferNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransferNow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransferNow/Pods-TransferNow.debug.xcconfig"; sourceTree = "<group>"; };
+		DA42F86E2191D22300841F48 /* TransferMoneyDataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferMoneyDataModelTests.swift; sourceTree = "<group>"; };
 		DACB796B2188B06300B753C7 /* TransferNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransferNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACB79732188B06300B753C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DACB79752188B06D00B753C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DACB79782188B06D00B753C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DACB797A2188B06D00B753C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DACB797F2188B06D00B753C7 /* TransferNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransferNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DACB79832188B06D00B753C7 /* TransferNowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferNowTests.swift; sourceTree = "<group>"; };
+		DACB79832188B06D00B753C7 /* ServiceAPIEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPIEndPoint.swift; sourceTree = "<group>"; };
 		DACB79852188B06D00B753C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DACB798A2188B06D00B753C7 /* TransferNowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransferNowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACB798E2188B06D00B753C7 /* TransferNowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferNowUITests.swift; sourceTree = "<group>"; };
@@ -77,6 +88,9 @@
 		DACB79CB21898A7100B753C7 /* TransferSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferSuccessViewController.swift; sourceTree = "<group>"; };
 		DACB79CD21899F9700B753C7 /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = ReadMe.md; path = TransferNow/ReadMe.md; sourceTree = "<group>"; };
 		DACB79CF2189A06200B753C7 /* changelog.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = changelog.md; path = TransferNow/changelog.md; sourceTree = "<group>"; };
+		F45C9C6A5C24E8821906C079 /* Pods-TransferNowUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransferNowUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransferNowUITests/Pods-TransferNowUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F7BA4C2F3F2DE35110B41E5A /* Pods-TransferNowUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransferNowUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransferNowUITests/Pods-TransferNowUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FEC37202E6F89D022FDD00DB /* Pods_TransferNowUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransferNowUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D8325980750818265A8C18 /* Pods_TransferNow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EAE9D54E708CB34F7F6C4E0 /* Pods_TransferNowTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +114,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E80CA5AA59DEB0C5046101F /* Pods_TransferNowUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FA17EAC6B26AE78F6472B69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B570FF55D736AD4362630CB /* Pods_TransferNow.framework */,
+				58F842B30F745DEDA8F86AEB /* Pods_TransferNowTests.framework */,
+				FEC37202E6F89D022FDD00DB /* Pods_TransferNowUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57E730035E1895B6427D0E0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB0F6F55966703C205118394 /* Pods-TransferNow.debug.xcconfig */,
+				00A315EF6A51DDC0C379842A /* Pods-TransferNow.release.xcconfig */,
+				9DC09DAC109FDED428543EF3 /* Pods-TransferNowTests.debug.xcconfig */,
+				30D2E4D52C520B302F17417D /* Pods-TransferNowTests.release.xcconfig */,
+				F7BA4C2F3F2DE35110B41E5A /* Pods-TransferNowUITests.debug.xcconfig */,
+				F45C9C6A5C24E8821906C079 /* Pods-TransferNowUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DACB79622188B06300B753C7 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +153,8 @@
 				DACB79822188B06D00B753C7 /* TransferNowTests */,
 				DACB798D2188B06D00B753C7 /* TransferNowUITests */,
 				DACB796C2188B06300B753C7 /* Products */,
+				57E730035E1895B6427D0E0E /* Pods */,
+				4FA17EAC6B26AE78F6472B69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,7 +188,8 @@
 		DACB79822188B06D00B753C7 /* TransferNowTests */ = {
 			isa = PBXGroup;
 			children = (
-				DACB79832188B06D00B753C7 /* TransferNowTests.swift */,
+				DA42F86E2191D22300841F48 /* TransferMoneyDataModelTests.swift */,
+				DACB79832188B06D00B753C7 /* ServiceAPIEndPoint.swift */,
 				DACB79852188B06D00B753C7 /* Info.plist */,
 			);
 			path = TransferNowTests;
@@ -265,6 +308,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DACB79932188B06D00B753C7 /* Build configuration list for PBXNativeTarget "TransferNow" */;
 			buildPhases = (
+				28F53878ED15DF945C9F2D69 /* [CP] Check Pods Manifest.lock */,
 				DACB79672188B06300B753C7 /* Sources */,
 				DACB79682188B06300B753C7 /* Frameworks */,
 				DACB79692188B06300B753C7 /* Resources */,
@@ -282,9 +326,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DACB79962188B06D00B753C7 /* Build configuration list for PBXNativeTarget "TransferNowTests" */;
 			buildPhases = (
+				C9AE0E6F802B10DF3458E35F /* [CP] Check Pods Manifest.lock */,
 				DACB797B2188B06D00B753C7 /* Sources */,
 				DACB797C2188B06D00B753C7 /* Frameworks */,
 				DACB797D2188B06D00B753C7 /* Resources */,
+				A94F74572B3C2354EE76464C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -300,9 +346,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DACB79992188B06D00B753C7 /* Build configuration list for PBXNativeTarget "TransferNowUITests" */;
 			buildPhases = (
+				1CF8D2B3FD6DA5EDB76C2990 /* [CP] Check Pods Manifest.lock */,
 				DACB79862188B06D00B753C7 /* Sources */,
 				DACB79872188B06D00B753C7 /* Frameworks */,
 				DACB79882188B06D00B753C7 /* Resources */,
+				0720C23A49B59C86DC693E28 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -387,6 +435,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0720C23A49B59C86DC693E28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TransferNowUITests/Pods-TransferNowUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransferNowUITests/Pods-TransferNowUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1CF8D2B3FD6DA5EDB76C2990 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TransferNowUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28F53878ED15DF945C9F2D69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TransferNow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A94F74572B3C2354EE76464C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TransferNowTests/Pods-TransferNowTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransferNowTests/Pods-TransferNowTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9AE0E6F802B10DF3458E35F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TransferNowTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DACB79672188B06300B753C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -413,7 +578,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DACB79842188B06D00B753C7 /* TransferNowTests.swift in Sources */,
+				DACB79842188B06D00B753C7 /* ServiceAPIEndPoint.swift in Sources */,
+				DA42F86F2191D22300841F48 /* TransferMoneyDataModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +746,7 @@
 		};
 		DACB79942188B06D00B753C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB0F6F55966703C205118394 /* Pods-TransferNow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -598,6 +765,7 @@
 		};
 		DACB79952188B06D00B753C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00A315EF6A51DDC0C379842A /* Pods-TransferNow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -616,6 +784,7 @@
 		};
 		DACB79972188B06D00B753C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DC09DAC109FDED428543EF3 /* Pods-TransferNowTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -636,6 +805,7 @@
 		};
 		DACB79982188B06D00B753C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30D2E4D52C520B302F17417D /* Pods-TransferNowTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -656,6 +826,7 @@
 		};
 		DACB799A2188B06D00B753C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7BA4C2F3F2DE35110B41E5A /* Pods-TransferNowUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -675,6 +846,7 @@
 		};
 		DACB799B2188B06D00B753C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F45C9C6A5C24E8821906C079 /* Pods-TransferNowUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

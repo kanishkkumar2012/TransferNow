@@ -26,9 +26,45 @@ class TransferNowUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testWithValidInputForSuccess() {
+
+        let app = XCUIApplication()
+
+        let fromAccountTextField = app.textFields["From Account"]
+        fromAccountTextField.tap()
+        fromAccountTextField.typeText("123456")
+
+        let toAccountTextField = app.textFields["To Account"]
+        toAccountTextField.tap()
+        toAccountTextField.typeText("987654")
+
+        let amountTextField = app.textFields["Amount (HKD)"]
+        amountTextField.tap()
+        amountTextField.typeText("100")
+
+        app.buttons["Send"].tap()
+
+        let successStaticText = app.staticTexts["Success"]
+        XCTAssertEqual(successStaticText.exists, true)
     }
 
+    func testWithInvalidInput() {
+
+        let app = XCUIApplication()
+
+        let fromAccountTextField = app.textFields["From Account"]
+        fromAccountTextField.tap()
+        fromAccountTextField.typeText("")
+
+        let toAccountTextField = app.textFields["To Account"]
+        toAccountTextField.tap()
+        toAccountTextField.typeText("987654")
+
+        let amountTextField = app.textFields["Amount (HKD)"]
+        amountTextField.tap()
+        amountTextField.typeText("100")
+
+        app.buttons["Send"].tap()
+        app.alerts["Error"].buttons["OK"].tap()
+    }
 }

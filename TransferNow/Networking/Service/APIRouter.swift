@@ -28,25 +28,9 @@ class Router<EndPoint: APIEndPointType>: APIRouter {
         do {
             let request = try self.buildRequest(from: route)
             print("\n\n-------------- REQUEST --------------\n\n [\(request)]")
-            
-            if (APIManager.environment == .development) {
-                if let path = Bundle.main.path(forResource: "transfersuccess_response", ofType: "json") {
-                    do {
-                        let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                        let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
-                        if let jsonResult = jsonResult as? Dictionary<String, AnyObject>, let _ = jsonResult["results"] as? [Any] {
-                            completion(data, nil, nil)
-                        }
-                    } catch {
-                        completion(nil, nil, error)
-                    }
-                }
-            }
-
             //The URLSession object calls the delegate’s urlSession(_:dataTask:didReceive:completionHandler:) method.
             //Decide whether to convert the data task into a download task, and then call the completion handler to convert, continue, or cancel the task.
             task = session.dataTask(with: request, completionHandler: { data, response, error in
-                
                 completion(data, response, error)
             })
         }catch {
